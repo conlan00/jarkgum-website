@@ -1,0 +1,37 @@
+.navbar{
+    align-items: center;            /* wyrównanie w pionie */
+    justify-content: space-between;
+    margin: 0px;
+    border-bottom: 2px solid gray;
+    padding: 1%;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:end;
+    background-color: hsl(0,0%,25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.navbar a:hover{
+    background-color: hsl(0,0%,10%);
+}
+.logo{
+    margin-right: auto;
+    display: flex;
+}
+.logo img {
+    width: 120px;  /* szerokość */
+    height: 50px;  /* wysokość */
+    object-fit: contain; /* zachowanie proporcji obrazu */
+  }
