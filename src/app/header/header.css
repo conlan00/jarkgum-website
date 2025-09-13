@@ -1,37 +1,102 @@
+.navdiv{
+    display: flex;   
+    /* flex-direction: column; */
+    align-items: center;  
+    justify-content: space-between; 
+    background-color: hsl(64, 74%, 54%);
+    /* position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 1000; */
+}
 .navbar{
-    align-items: center;            /* wyrównanie w pionie */
+    align-items: center;        
     justify-content: space-between;
     margin: 0px;
-    border-bottom: 2px solid gray;
     padding: 1%;
+    background-color: hsl(64, 74%, 54%);
+    border-radius: 0%;
 }
 .navbar ul{
     list-style-type: none;
-    display: flex;
+    display: flex;/*   block  ffff*/
     justify-content:end;
-    background-color: hsl(0,0%,25%);
+    background-color: hsl(64, 74%, 54%);
     padding: 0px;
     margin: 0px;
     overflow: hidden;
-    
 }
 .navbar a{
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 15px;
     display: flex;
     text-align: center;
     align-items: center;
+    background-color: hsl(64, 74%, 54%);
+
+}
+.navbar a svg{
+    background-color: transparent;
+    color: black;
+}
+.navbar a svg:hover{
+    background-color: hsl(0, 0%, 100%);
+}
+.navbar li{
+    background-color: hsl(64, 74%, 54%);
 }
 .navbar a:hover{
-    background-color: hsl(0,0%,10%);
+    background-color: hsl(0, 0%, 100%);
 }
 .logo{
-    margin-right: auto;
+    background-color: hsl(64, 74%, 54%);
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    background-color: hsl(64, 74%, 54%);
+    display: flex;
+    align-items: center; /* wyrównanie w pionie */
+    gap: 100px; 
 }
 .logo img {
-    width: 120px;  /* szerokość */
-    height: 50px;  /* wysokość */
-    object-fit: contain; /* zachowanie proporcji obrazu */
-  }
+    width: 200px;  
+    height: 100px; 
+    object-fit: contain; 
+    background-color: transparent;
+    border: 15px;
+}
+.hamburger {
+    background-color: hsl(64, 74%, 54%);
+    display: none;
+    
+}
+.hamburger svg{
+    background-color: hsl(64, 74%, 54%);
+}
+@media (max-width: 768px) {
+    .navdiv{
+        flex-direction: column;
+        width: 100%;
+        align-items: start; 
+    }
+    .hamburger{
+        display: flex;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .navbar ul.active{
+        display: block;
+       
+    }
+    .navbar{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1%;
+        width: 95%;
+    }
+}

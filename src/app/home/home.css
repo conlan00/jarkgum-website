@@ -1,0 +1,153 @@
+#section1 {
+    position: relative;
+    color: white;
+    background-color: blue;
+    height: 100vh; 
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#section1 .cc {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 66, 66, 0.5); 
+    z-index: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; 
+    font-size: 24px; 
+}
+.overlay-img {
+    margin-bottom: 15%;
+    max-width: 50%; 
+    max-height: 80%; 
+    object-fit: contain; 
+    background-color: transparent;
+    display: flex;
+}
+.hello{
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.line{
+    object-fit: fill;
+    border-left: 4px solid white;
+    height: 70%;
+    margin-bottom: 10%;
+}
+.info{
+    flex:1;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.397);
+    height: auto;
+    margin-bottom: 10%;
+    border-radius: 3%;
+    color: white;
+    text-align: center;
+    margin-right: 3%;
+    margin-left: 3%;
+    padding-bottom: 2%;
+}
+.info h2{
+    background-color: transparent;
+}
+.info h2 strong{
+    background-color: transparent;
+}
+
+.info h5{
+    font-size: clamp(0.4rem, 2vw + 0.4rem, 1.1rem);
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    padding-top: 0.5%;
+}
+.info h4{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+.info h5 svg{
+    background-color: transparent;
+
+}
+.info h4{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+.info h4 svg{
+    background-color: transparent;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.btn{
+    background-color: hsl(64, 74%, 54%);
+    border-radius: 30px;
+    border-color: transparent;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 20%;
+    color: black;
+}
+.btn:hover{
+    background-color: hsl(0, 0%, 100%);
+}
+.btn svg{
+    background-color: transparent;
+}
+@media (max-width: 768px) {
+.overlay{
+    display: block;
+  align-items: stretch;
+
+}
+.overlay-img{
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.line{
+    height: 0.5%;
+    object-fit: fill;
+    border-top: 4px solid white;
+    border-left: 0px;
+    background-color: transparent;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+.info{
+  height: auto;
+  padding-bottom: 5%;
+}
+
+}
